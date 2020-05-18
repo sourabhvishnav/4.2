@@ -29,9 +29,9 @@ function setup(){
 
    box9 = new Box(380,100,15,45);
 
-   shoter = new Shoter(100,200,35,35);
+   shoter = new Shoter(100,250,35,35);
 
-    slingShot = new Slingshot(shoter.body,{x:100 , y:200});
+    slingShot = new SlingShot(shoter.body,{x:100 , y:250});
 }
 
 function draw(){
