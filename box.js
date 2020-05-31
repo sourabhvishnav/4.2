@@ -21,7 +21,8 @@ class Box{
      }
      else{
         World.remove(world, this.body);
-        this.Visiblity = this.Visiblity - 5;        
+        this.Visiblity = this.Visiblity - 5;  
+        score++;      
   }
       }
   }

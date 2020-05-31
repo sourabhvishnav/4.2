@@ -10,6 +10,8 @@ var slingShot;
 var ground,ground2;
 var shoter;
 
+var score = 0;
+
 function setup(){
     var canvas = createCanvas(600,400);
     engine = Engine.create();
@@ -65,7 +67,9 @@ function draw(){
     shoter.display();
     slingShot.display(); 
 
-   
+  // drawSprites();
+   fill("black")
+   text("Score: " + score , 20 ,75);
 }
  function mouseDragged(){
      Matter.Body.setPosition(shoter.body ,{x:mouseX,y:mouseY});
